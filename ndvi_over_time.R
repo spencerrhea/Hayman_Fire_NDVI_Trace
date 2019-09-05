@@ -17,7 +17,7 @@ ndvi_long <- gather(ndvi,
                     -DateTime)
 
 # Plotting all the data
-ggplot(ndvi_long,aes(x=DateTime,y=NDVI,color=site)) +
+ggplot(ndvi_long,aes(x=DateTime,y=NDVI,color=site)) 
   geom_point(shape=1) +
   geom_line() +
   theme_few() + 
