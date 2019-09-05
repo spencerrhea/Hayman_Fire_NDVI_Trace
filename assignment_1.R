@@ -69,7 +69,9 @@ ndsi_winter <- filter(full_wide, month %in% c(1,2,3,4,5)) %>%
 
 ndvi_summer <- filter(full_wide, month %in% c(6,7,8)) %>%
   group_by(year, site) %>%
-  summarise(ndvi = mean(ndvi))
+  summarise(ndvi_mean = mean(ndvi))
+
+ndsi_ndvi_join <- inner_join(ndsi_winter, ndvi_summer, by = "site")
 
 ## End code for question 2 -----------------
 
