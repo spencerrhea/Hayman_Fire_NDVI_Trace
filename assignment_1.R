@@ -62,4 +62,9 @@ full_long <- rbind(ndvi,ndmi,ndsi) %>%
 
 ## End code for question 3
 
+###### Question 4 #####
+#What month is the greenest month on average? Does this change in the burned
+# plots after the fire? 
 
+##### Question 5 ####
+#What month is the snowiest on average?
